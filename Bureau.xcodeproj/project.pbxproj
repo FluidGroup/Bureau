@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		4B2438382343752500A63E7B /* Bureau.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B2438362343752500A63E7B /* Bureau.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B2438572343754300A63E7B /* BureauContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2438562343754300A63E7B /* BureauContext.swift */; };
+		4B243859234375B600A63E7B /* BureauController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B243858234375B600A63E7B /* BureauController.swift */; };
+		4B24385B2343760100A63E7B /* BureauInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B24385A2343760100A63E7B /* BureauInputViewController.swift */; };
+		4B24385D2343763100A63E7B /* BureauInputContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B24385C2343763100A63E7B /* BureauInputContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4B2438332343752500A63E7B /* Bureau.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bureau.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B2438362343752500A63E7B /* Bureau.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bureau.h; sourceTree = "<group>"; };
 		4B2438372343752500A63E7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B2438562343754300A63E7B /* BureauContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BureauContext.swift; sourceTree = "<group>"; };
+		4B243858234375B600A63E7B /* BureauController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BureauController.swift; sourceTree = "<group>"; };
+		4B24385A2343760100A63E7B /* BureauInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BureauInputViewController.swift; sourceTree = "<group>"; };
+		4B24385C2343763100A63E7B /* BureauInputContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BureauInputContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,10 @@
 			isa = PBXGroup;
 			children = (
 				4B2438362343752500A63E7B /* Bureau.h */,
+				4B2438562343754300A63E7B /* BureauContext.swift */,
+				4B243858234375B600A63E7B /* BureauController.swift */,
+				4B24385A2343760100A63E7B /* BureauInputViewController.swift */,
+				4B24385C2343763100A63E7B /* BureauInputContainerView.swift */,
 				4B2438372343752500A63E7B /* Info.plist */,
 			);
 			path = Bureau;
@@ -90,11 +102,13 @@
 		4B24382A2343752500A63E7B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1110;
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = muukii;
 				TargetAttributes = {
 					4B2438322343752500A63E7B = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 					};
 				};
 			};
@@ -131,6 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B2438572343754300A63E7B /* BureauContext.swift in Sources */,
+				4B243859234375B600A63E7B /* BureauController.swift in Sources */,
+				4B24385B2343760100A63E7B /* BureauInputViewController.swift in Sources */,
+				4B24385D2343763100A63E7B /* BureauInputContainerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +206,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -245,7 +263,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -260,6 +278,7 @@
 		4B24383C2343752500A63E7B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -275,6 +294,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.Bureau;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,6 +303,7 @@
 		4B24383D2343752500A63E7B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
