@@ -6,6 +6,11 @@ An easy way to display a custom view on the input view in UIKit.
 
 ![](demo.gif)
 
+## Requirements
+
+- Swift 5.1
+- iOS 10 +
+
 ## Usage
 
 ```swift
