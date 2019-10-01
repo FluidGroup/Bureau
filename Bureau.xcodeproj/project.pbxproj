@@ -12,7 +12,40 @@
 		4B243859234375B600A63E7B /* BureauController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B243858234375B600A63E7B /* BureauController.swift */; };
 		4B24385B2343760100A63E7B /* BureauInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B24385A2343760100A63E7B /* BureauInputViewController.swift */; };
 		4B24385D2343763100A63E7B /* BureauInputContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B24385C2343763100A63E7B /* BureauInputContainerView.swift */; };
+		4B24387D234377A700A63E7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B24387C234377A700A63E7B /* AppDelegate.swift */; };
+		4B243881234377A700A63E7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B243880234377A700A63E7B /* ViewController.swift */; };
+		4B243884234377A700A63E7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B243882234377A700A63E7B /* Main.storyboard */; };
+		4B243886234377A700A63E7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B243885234377A700A63E7B /* Assets.xcassets */; };
+		4B243889234377A700A63E7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B243887234377A700A63E7B /* LaunchScreen.storyboard */; };
+		4B24388F2343781800A63E7B /* CustomInputRootView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B24388E2343781800A63E7B /* CustomInputRootView.xib */; };
+		4B2438912343786900A63E7B /* CustomInputRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2438902343786900A63E7B /* CustomInputRootView.swift */; };
+		4B243893234378D600A63E7B /* Bureau.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2438332343752500A63E7B /* Bureau.framework */; };
+		4B243894234378D600A63E7B /* Bureau.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2438332343752500A63E7B /* Bureau.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B243895234378D600A63E7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B24382A2343752500A63E7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B2438322343752500A63E7B;
+			remoteInfo = Bureau;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4B243897234378D600A63E7B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4B243894234378D600A63E7B /* Bureau.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4B2438332343752500A63E7B /* Bureau.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bureau.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +55,15 @@
 		4B243858234375B600A63E7B /* BureauController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BureauController.swift; sourceTree = "<group>"; };
 		4B24385A2343760100A63E7B /* BureauInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BureauInputViewController.swift; sourceTree = "<group>"; };
 		4B24385C2343763100A63E7B /* BureauInputContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BureauInputContainerView.swift; sourceTree = "<group>"; };
+		4B24387A234377A700A63E7B /* BureauDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BureauDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B24387C234377A700A63E7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4B243880234377A700A63E7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4B243883234377A700A63E7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4B243885234377A700A63E7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B243888234377A700A63E7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4B24388A234377A700A63E7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B24388E2343781800A63E7B /* CustomInputRootView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomInputRootView.xib; sourceTree = "<group>"; };
+		4B2438902343786900A63E7B /* CustomInputRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputRootView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +74,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4B243877234377A700A63E7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B243893234378D600A63E7B /* Bureau.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -39,7 +89,9 @@
 			isa = PBXGroup;
 			children = (
 				4B2438352343752500A63E7B /* Bureau */,
+				4B24387B234377A700A63E7B /* BureauDemo */,
 				4B2438342343752500A63E7B /* Products */,
+				4B243892234378D600A63E7B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				4B2438332343752500A63E7B /* Bureau.framework */,
+				4B24387A234377A700A63E7B /* BureauDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +115,28 @@
 				4B2438372343752500A63E7B /* Info.plist */,
 			);
 			path = Bureau;
+			sourceTree = "<group>";
+		};
+		4B24387B234377A700A63E7B /* BureauDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4B24387C234377A700A63E7B /* AppDelegate.swift */,
+				4B243880234377A700A63E7B /* ViewController.swift */,
+				4B243882234377A700A63E7B /* Main.storyboard */,
+				4B24388E2343781800A63E7B /* CustomInputRootView.xib */,
+				4B2438902343786900A63E7B /* CustomInputRootView.swift */,
+				4B243885234377A700A63E7B /* Assets.xcassets */,
+				4B243887234377A700A63E7B /* LaunchScreen.storyboard */,
+				4B24388A234377A700A63E7B /* Info.plist */,
+			);
+			path = BureauDemo;
+			sourceTree = "<group>";
+		};
+		4B243892234378D600A63E7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +171,25 @@
 			productReference = 4B2438332343752500A63E7B /* Bureau.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		4B243879234377A700A63E7B /* BureauDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B24388B234377A700A63E7B /* Build configuration list for PBXNativeTarget "BureauDemo" */;
+			buildPhases = (
+				4B243876234377A700A63E7B /* Sources */,
+				4B243877234377A700A63E7B /* Frameworks */,
+				4B243878234377A700A63E7B /* Resources */,
+				4B243897234378D600A63E7B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B243896234378D600A63E7B /* PBXTargetDependency */,
+			);
+			name = BureauDemo;
+			productName = BureauDemo;
+			productReference = 4B24387A234377A700A63E7B /* BureauDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -109,6 +203,9 @@
 					4B2438322343752500A63E7B = {
 						CreatedOnToolsVersion = 11.1;
 						LastSwiftMigration = 1110;
+					};
+					4B243879234377A700A63E7B = {
+						CreatedOnToolsVersion = 11.1;
 					};
 				};
 			};
@@ -126,6 +223,7 @@
 			projectRoot = "";
 			targets = (
 				4B2438322343752500A63E7B /* Bureau */,
+				4B243879234377A700A63E7B /* BureauDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -135,6 +233,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B243878234377A700A63E7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B243889234377A700A63E7B /* LaunchScreen.storyboard in Resources */,
+				4B243886234377A700A63E7B /* Assets.xcassets in Resources */,
+				4B24388F2343781800A63E7B /* CustomInputRootView.xib in Resources */,
+				4B243884234377A700A63E7B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +261,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4B243876234377A700A63E7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B243881234377A700A63E7B /* ViewController.swift in Sources */,
+				4B24387D234377A700A63E7B /* AppDelegate.swift in Sources */,
+				4B2438912343786900A63E7B /* CustomInputRootView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B243896234378D600A63E7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B2438322343752500A63E7B /* Bureau */;
+			targetProxy = 4B243895234378D600A63E7B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4B243882234377A700A63E7B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B243883234377A700A63E7B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4B243887234377A700A63E7B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B243888234377A700A63E7B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4B2438392343752500A63E7B /* Debug */ = {
@@ -324,6 +470,42 @@
 			};
 			name = Release;
 		};
+		4B24388C234377A700A63E7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BureauDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.BureauDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B24388D234377A700A63E7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BureauDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.BureauDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -341,6 +523,15 @@
 			buildConfigurations = (
 				4B24383C2343752500A63E7B /* Debug */,
 				4B24383D2343752500A63E7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B24388B234377A700A63E7B /* Build configuration list for PBXNativeTarget "BureauDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B24388C234377A700A63E7B /* Debug */,
+				4B24388D234377A700A63E7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
