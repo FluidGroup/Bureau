@@ -1,4 +1,4 @@
-# Bureau
+# Bureau - A Container to display your customized view on UIKit's InputView
 
 An easy way to display a custom view on the input view in UIKit.
 
