@@ -24,10 +24,20 @@
                                     <action selector="tapShowButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hin-zv-5zQ"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tOw-gQ-jQ4">
+                                <rect key="frame" x="158.5" y="371" width="97" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="vIF-dk-w1l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="yF5-wH-4th" firstAttribute="top" secondItem="tOw-gQ-jQ4" secondAttribute="bottom" constant="20" id="1s2-VC-xxm"/>
                             <constraint firstItem="yF5-wH-4th" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8kJ-vx-AHI"/>
+                            <constraint firstItem="tOw-gQ-jQ4" firstAttribute="centerX" secondItem="yF5-wH-4th" secondAttribute="centerX" id="RNk-zz-C2l"/>
                             <constraint firstItem="yF5-wH-4th" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jXD-SB-6CW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
