@@ -52,6 +52,9 @@ public final class BureauController {
   }
   
   public func show() {
+    if responder.isFirstResponder {
+      responder.reloadInputViews()
+    }
     responder.becomeFirstResponder()
   }
   
@@ -84,13 +87,5 @@ final class DummyResponder: UIView {
   func setOwner(viewController: UIViewController) {
     viewController.view.addSubview(self)
   }
-  
-  func show() {
-    resignFirstResponder()
-  }
-  
-  func dismiss() {
-    becomeFirstResponder()
-  }
-  
+    
 }
