@@ -52,10 +52,8 @@ public final class BureauController {
   }
   
   public func show() {
-    if responder.isFirstResponder {
-      responder.reloadInputViews()
-    }
     responder.becomeFirstResponder()
+    responder.reloadInputViews()
   }
   
   public func dismiss() {
