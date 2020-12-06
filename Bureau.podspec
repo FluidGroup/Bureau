@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "Bureau"
-  s.version = '0.1.1'
+  s.version = '0.1.2'
   s.swift_version = "5.1"
   s.summary = "An easy way to display a custom view on the input view in UIKit."
   s.homepage = "https://github.com/muukii/Bureau"
