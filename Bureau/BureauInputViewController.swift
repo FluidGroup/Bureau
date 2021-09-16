@@ -70,4 +70,22 @@ public final class BureauInputViewController: UIInputViewController {
     ])
     
   }
+  
+  public func setViewController(_ viewController: UIViewController) {
+    
+    inputView!.allowsSelfSizing = false
+    
+    view.addSubview(viewController.view)
+    addChild(viewController)
+    didMove(toParent: self)
+    
+    viewController.view.translatesAutoresizingMaskIntoConstraints = false
+    
+    NSLayoutConstraint.activate([
+      viewController.view.topAnchor.constraint(equalTo: view.topAnchor),
+      viewController.view.rightAnchor.constraint(equalTo: view.rightAnchor),
+      viewController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+      viewController.view.leftAnchor.constraint(equalTo: view.leftAnchor)
+    ])
+  }
 }
