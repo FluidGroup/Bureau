@@ -10,7 +10,7 @@ import UIKit
 
 import Bureau
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
   
   private let bureauController = BureauController()
   private var token: Any?
@@ -22,9 +22,9 @@ class ViewController: UIViewController {
     
     let rootView = CustomInputRootView.make()
     rootView.context = bureauController.context
-    
-    bureauController.containerView.addSubviewToEdges(view: rootView)
-    
+
+    bureauController.inputViewController.setView(rootView)
+
     // Do any additional setup after loading the view.
 
     token = NotificationCenter.default.addObserver(forName: UIApplication.keyboardWillChangeFrameNotification, object: nil, queue: nil) { (notification) in

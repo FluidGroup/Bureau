@@ -23,10 +23,6 @@ import UIKit
 
 public final class BureauController {
   
-  public var containerView: BureauInputContainerView {
-    inputViewController.containerView
-  }
-  
   public var inputViewController: BureauInputViewController {
     responder._inputViewController
   }

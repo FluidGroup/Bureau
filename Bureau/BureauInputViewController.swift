@@ -24,15 +24,13 @@ import UIKit
 public final class BureauInputViewController: UIInputViewController {
   
   private let context: BureauContext
-  public let containerView: BureauInputContainerView
-  
+
   public init() {
     
     let _context = BureauContext()
     
     self.context = _context
-    self.containerView = BureauInputContainerView(context: _context)
-    
+
     super.init(nibName: nil, bundle: nil)
     
     context.onReceive = { [weak self] action in
@@ -56,18 +54,28 @@ public final class BureauInputViewController: UIInputViewController {
     
     view.translatesAutoresizingMaskIntoConstraints = false
     inputView!.allowsSelfSizing = true
-    
-    let c = containerView
-    
-    view.addSubview(c)
-    c.translatesAutoresizingMaskIntoConstraints = false
-    
-    NSLayoutConstraint.activate([
-      c.topAnchor.constraint(equalTo: view.topAnchor),
-      c.rightAnchor.constraint(equalTo: view.rightAnchor),
-      c.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-      c.leftAnchor.constraint(equalTo: view.leftAnchor),
-    ])
-    
+      
   }
+
+  public func setView(_ contentView: UIView) {
+
+    view.addSubview(contentView)
+
+    contentView.translatesAutoresizingMaskIntoConstraints = false
+
+    NSLayoutConstraint.activate([
+      contentView.topAnchor.constraint(equalTo: view.topAnchor),
+      contentView.rightAnchor.constraint(equalTo: view.rightAnchor),
+      contentView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+      contentView.leftAnchor.constraint(equalTo: view.leftAnchor),
+    ])
+  }
+
+  public func setViewController(_ viewController: UIViewController) {
+
+    addChild(viewController)
+    setView(viewController.view)
+    viewController.didMove(toParent: self)
+  }
+
 }

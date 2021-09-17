@@ -23,7 +23,7 @@ import UIKit
 
 public final class BureauInputContainerView: UIView {
   
-  init(context: BureauContext) {
+  init() {
     super.init(frame: .zero)
     
     translatesAutoresizingMaskIntoConstraints = false
