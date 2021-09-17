@@ -59,6 +59,10 @@ public final class BureauInputViewController: UIInputViewController {
 
   public func setView(_ contentView: UIView) {
 
+    view.subviews.forEach {
+      $0.removeFromSuperview()
+    }
+
     view.addSubview(contentView)
 
     contentView.translatesAutoresizingMaskIntoConstraints = false
@@ -72,6 +76,11 @@ public final class BureauInputViewController: UIInputViewController {
   }
 
   public func setViewController(_ viewController: UIViewController) {
+
+    children.forEach {
+      $0.removeFromParent()
+      $0.view.removeFromSuperview()
+    }
 
     addChild(viewController)
     setView(viewController.view)
