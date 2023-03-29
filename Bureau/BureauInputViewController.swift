@@ -48,6 +48,13 @@ public final class BureauInputViewController: UIInputViewController {
   public required init?(coder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
+
+  deinit {
+    children.forEach {
+      $0.removeFromParent()
+      $0.view.removeFromSuperview()
+    }
+  }
   
   public override func viewDidLoad() {
     super.viewDidLoad()
